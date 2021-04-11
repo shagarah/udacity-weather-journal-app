@@ -40,5 +40,7 @@ This app can be used to post the user feelings about the weather and compare it 
 ## Author
 
 Ahmad Adel Eldardiry
+
 https://github.com/shagarah
+
 12-04-2021
