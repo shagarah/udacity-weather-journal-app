@@ -21,6 +21,7 @@ This app can be used to post the user feelings about the weather and compare it 
 * start the server:
   
   `node server.js`
+  
   or if you have nodemon installed:
 
   `npx nodemon server.js`
