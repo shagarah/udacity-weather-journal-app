@@ -1,5 +1,5 @@
 /**
- * Udacity Weather Journal Project - by Ahmad Adel Eldardiry - 04/04/2021
+ * Udacity Weather Journal Project - by Ahmad Adel Eldardiry - 12/04/2021
 */
 // Global function / class that returns an object to use to do the required functionality
 const WJ = (()=> {
