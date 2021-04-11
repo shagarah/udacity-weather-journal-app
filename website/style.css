@@ -1,0 +1,208 @@
+/* global variables */
+:root {
+    --pad: 10px;
+    --gap: 20px;
+    --radius: 7px;
+    --front: #2A80BB;
+    --shad: #094064;
+    --back: #fff;
+    --fs1: 2.7em;
+    --fs2: 1.3em;
+    --fs3: 1em;
+}
+
+/* html and body */
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* app */
+#app {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--front);
+}
+
+/* headline */
+.headline {
+    background-image: url(sky.jpg);
+    background-repeat: no-repeat;
+    background-color: #A0C4E4;
+}
+
+.headline h1 {
+    text-align: center;
+    font-size: var(--fs1);
+    color: #fff;
+    text-shadow: 0px 0px 5px var(--shad);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+/* form */
+.formcontainer {
+    grid-column: 1 / -2;
+    padding: var(--gap);
+    background-color: #f1f9ff;
+}
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#zip {
+    width: 50%;
+    height: 20px;
+    padding: var(--pad);
+    border-radius: var(--radius);
+    margin-bottom: var(--gap);
+    font-size: var(--fs2);
+    color: var(--shad);
+}
+
+#feelings {
+    width: 80%;
+    padding: var(--pad);
+    border-radius: var(--radius);
+    margin-bottom: var(--gap);
+    font-size: calc(var(--fs2) + 0.1em);
+    color: var(--shad);
+}
+
+#generate {
+    width: 50%;
+    height: 50px;
+    margin-bottom: var(--gap);
+    display: block;
+    background-color: var(--front);
+    color: var(--back);
+    border: 0.5px solid var(--front);
+    border-radius: var(--radius);
+    font-size: var(--fs3);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#generate:hover {
+    background-color: var(--back);
+    color: var(--front);
+}
+
+/* error handling */
+.border {
+    border: 0.5px solid var(--front);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#erroricon {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+}
+
+#erroricon img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: inline;
+    max-width: 32px;
+    height: auto;
+}
+
+#erroricon .errtxt {
+    position: absolute;
+    top: 11px;
+    left: 42px;
+    color: red;
+}
+
+.show {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+/* last entry */
+.entrycontainer {
+    grid-column: 3 / 3;
+    background-color: #e8f4ff;
+    padding: var(--gap);
+}
+
+.entrytitle {
+    font-size: var(--fs2);
+}
+
+#entryHolder {
+    background-color: var(--back);
+    border-radius: var(--radius);
+    padding: var(--pad);
+    margin-top: var(--pad);
+}
+
+#entryHolder div {
+    margin: 20px;
+}
+
+#entryHolder div span {
+    color: var(--shad);
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+    display: block;
+    font-size: var(--fs2);
+    padding: var(--pad);
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text*/
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #ccc;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ccc;
+}
+
+
+/* responsive styles */
+@media only screen and (max-width: 600px) {
+    .headline {
+        background-size: cover;
+    }
+    .formcontainer {
+        grid-column: 1 / -1;
+    }
+    .entrycontainer {
+        grid-column: 1 / -1;
+    }
+}
