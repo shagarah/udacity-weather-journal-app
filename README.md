@@ -21,7 +21,7 @@ This app can be used to post the user feelings about the weather and compare it 
 * start the server:
   
   `node server.js`
-  
+
   or if you have nodemon installed:
 
   `npx nodemon server.js`
@@ -29,7 +29,7 @@ This app can be used to post the user feelings about the weather and compare it 
   
   `http://localhost:3000`
 * Enter your zip code in the first input field
-* Enter your feeling about the weather
+* Enter your feeling about the weather in the next text area
 * Click Generate
 
 ## Files in repository
