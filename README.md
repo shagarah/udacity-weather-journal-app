@@ -23,9 +23,6 @@ This app can be used to post the user feelings about the weather and compare it 
   
   `npm start`
 
-  or if you have nodemon installed:
-
-  `npx nodemon server.js`
 * In your web browser, go to:
   
   `http://localhost:3000`
