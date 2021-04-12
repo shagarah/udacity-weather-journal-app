@@ -32,8 +32,10 @@ This app can be used to post the user feelings about the weather and compare it 
 
 ## Files in repository
 
-* README.md
 * server.js
+* package.json
+* package-lock.json
+* README.md
 * website/app.js
 * website/index.html
 * website/style.css
