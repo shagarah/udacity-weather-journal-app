@@ -7,10 +7,7 @@ This app can be used to post the user feelings about the weather and compare it 
 ## Requirements
 
 1. Node.js
-2. Express module
-3. Body-Parser module
-4. Cors module
-5. The app will run on localhost on port 3000
+2. The app will run on localhost on port 3000
 
 ## Instructions
 
@@ -18,9 +15,13 @@ This app can be used to post the user feelings about the weather and compare it 
   
   `git clone https://github.com/shagarah/udacity-weather-journal-app.git`
 * From the command line / Terminal, cd to `udacity-weather-journal-app` working directory
+* Run
+  
+   `npm install`
+
 * start the server:
   
-  `node server.js`
+  `npm start`
 
   or if you have nodemon installed:
 
