@@ -18,6 +18,7 @@ const WJ = (()=> {
     // Weather API
     const baseURL = 'https://api.openweathermap.org/data/2.5/weather';
     const APIKey = 'f225326a1eaf5e0ba1811f4c7cb83ac5';
+    const tempUnit = 'metric';
     
     // Private methods
     //
@@ -69,7 +70,7 @@ const WJ = (()=> {
         if(!validate()) {
             return false;
         }
-        return await getWeatherData(buildURL(baseURL, { zip: zipCode.value, appid: APIKey }))
+        return await getWeatherData(buildURL(baseURL, { zip: zipCode.value, appid: APIKey, units: tempUnit }))
         .then( async (data) => {
             return await postData ('/postUserData', {
                 method: 'POST',
