@@ -1,16 +1,13 @@
 # Weather Journal App Project
 
 ## Overview
-
 This app can be used to post the user feelings about the weather and compare it with the actual temperature based on his current location (zip code).
 
 ## Requirements
-
 1. Node.js
 2. The app will run on localhost on port 3000
 
 ## Instructions
-
 * Clone the repository to your local machine:
   
   `git clone https://github.com/shagarah/udacity-weather-journal-app.git`
@@ -31,7 +28,6 @@ This app can be used to post the user feelings about the weather and compare it 
 * Click Generate
 
 ## Files in repository
-
 * server.js
 * package.json
 * package-lock.json
@@ -44,7 +40,6 @@ This app can be used to post the user feelings about the weather and compare it 
 * website/favicon.ico
 
 ## Author
-
 Ahmad Adel Eldardiry
 
 https://github.com/shagarah
