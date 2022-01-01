@@ -103,6 +103,7 @@ const WJ = (()=> {
         try {
             const response = await fetch(url, req);
             const json = await response.json();
+            // node
             // check if server returned any errors and display it if callback is provided
             if(json.hasOwnProperty('cod') && !(json.cod === 200 || json.cod === 201)) {
                 if(erf) {

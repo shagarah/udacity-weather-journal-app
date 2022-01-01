@@ -16,10 +16,21 @@ const cors = require('cors');
 
 // Start up an instance of app
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 app.use(cors());
 
 // Initialize the main project folder
 app.use(express.static('website'));
+
+const ax = axios.get('https://api.openweathermap.org/data/2.5/weather?appid=f225326a1eaf5e0ba1811f4c7cb83ac5&zip=21523&unit=metric')
+.then(response => {
+    const wdata = response.data;
+    console.log(wdata.name);
+})
+.catch(err => {
+    console.log('Node Error: ' + err.response.statusText);
+});
 
 // routes
 // POST handler
