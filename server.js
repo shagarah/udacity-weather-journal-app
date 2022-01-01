@@ -1,5 +1,5 @@
 // server port
-const port = 3000;
+const port = process.env.port || 3000;
 // Endpoint for all routes
 const projectData = {};
 // store users data
@@ -7,17 +7,15 @@ const usersData = [];
 
 // Require Express to run server and routes
 const express = require('express');
-// Start up an instance of app
-const app = express();
-
-/* Middleware */
-//Here we are configuring express to use body-parser as middle-ware.
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
-
+// axios for loading stuff
+const axios = require('axios');
+// cheerio for parsing html
+const cheerio = require('cheerio');
 // Cors for cross origin allowance
 const cors = require('cors');
+
+// Start up an instance of app
+const app = express();
 app.use(cors());
 
 // Initialize the main project folder
